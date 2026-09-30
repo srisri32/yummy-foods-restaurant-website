@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yummy Foods</title>
+
+    <style>
+        /* =========================
+   BODY
+========================= */
+        
+        body {
+            margin: 0;
+            text-align: center;
+            font-family: "Comic Sans MS", sans-serif;
+            background: linear-gradient( 45deg, coral, lightgreen, coral);
+        }
+        /* =========================
+   NAVIGATION
+========================= */
+        
+        nav {
+            padding: 15px;
+        }
+        
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+        
+        nav a:hover {
+            color: red;
+        }
+        /* =========================
+   MAIN TITLE
+========================= */
+        
+        h1 {
+            font-size: 45px;
+            margin: 20px;
+        }
+        /* =========================
+   SECTION HEADING
+========================= */
+        
+        h2 {
+            background: linear-gradient( 45deg, red, black, red);
+            color: white;
+            padding: 15px;
+            width: 800px;
+            max-width: 80%;
+            margin: 30px auto;
+            border-radius: 50%;
+            box-shadow: 0 0 10px black;
+        }
+        /* =========================
+   PARAGRAPH
+========================= */
+        
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 20px auto;
+            max-width: 1100px;
+        }
+        /* =========================
+   TABLE
+========================= */
+        
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-spacing: 20px 15px;
+        }
+        
+        td {
+            width: 25%;
+            text-align: center;
+            vertical-align: top;
+        }
+        /* =========================
+   FOOD IMAGES
+========================= */
+        
+        td img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 0 10px black;
+        }
+        /* =========================
+   WELCOME IMAGES
+========================= */
+        
+        .welcome-table {
+            width: 90%;
+            margin: 20px auto;
+        }
+        
+        .welcome-table td {
+            width: 50%;
+        }
+        
+        .welcome-table img {
+            width: 90%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 0 10px black;
+        }
+        /* =========================
+   FOOD NAME
+========================= */
+        
+        h3 {
+            font-size: 20px;
+            margin-top: 12px;
+            margin-bottom: 10px;
+        }
+        /* =========================
+   SECTION
+========================= */
+        
+        section {
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        /* =========================
+   FOOTER
+========================= */
+        
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        /* =========================
+   TABLET / SMALL SCREEN
+========================= */
+        
+        @media (max-width: 1000px) {
+            table {
+                width: 95%;
+            }
+            td img {
+                height: 220px;
+            }
+        }
+        /* =========================
+   MOBILE
+========================= */
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            table {
+                border-spacing: 10px;
+            }
+            td img {
+                height: 190px;
+            }
+            .welcome-table img {
+                height: 230px;
+            }
+        }
+        /* =========================
+   VERY SMALL SCREEN
+========================= */
+        
+        @media (max-width: 500px) {
+            table {
+                width: 95%;
+            }
+            td {
+                width: 50%;
+            }
+            td img {
+                height: 160px;
+            }
+            .welcome-table {
+                width: 100%;
+            }
+            .welcome-table td {
+                width: 50%;
+            }
+            .welcome-table img {
+                width: 95%;
+                height: 180px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================================= -->
+    <!-- NAVIGATION -->
+    <!-- ================================================= -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#burgers">Burgers</a>
+
+        <a href="#fries">Fries</a>
+
+        <a href="#healthy">Greens</a>
+
+        <a href="#noodles">Noodles</a>
+
+        <a href="#desserts">Desserts</a>
+
+    </nav>
+
+
+
+    <!-- ================================================= -->
+    <!-- MAIN TITLE -->
+    <!-- ================================================= -->
+
+    <h1 id="home">
+
+        <span style="color:red">
+YUMMY
+</span>
+
+        <span style="color:yellow">
+FOODS
+</span>
+
+    </h1>
+
+
+
+    <!-- ================================================= -->
+    <!-- WELCOME SECTION -->
+    <!-- ================================================= -->
+
+    <h2>
+        Welcome to Yummy Foods
+    </h2>
+
+
+    <p>
+
+        Welcome to Yummy Foods, your favorite destination for delicious and freshly prepared food. We serve tasty meals made with fresh ingredients and lots of care. Enjoy a wonderful variety of food with your family and friends.
+
+    </p>
+
+
+    <!-- =========================
+     TWO WELCOME IMAGES
+========================= -->
+
+    <table class="welcome-table">
+
+        <tr>
+
+            <td>
+
+                <img src="main-1.jpg" alt="Delicious Food">
+
+                <h3>
+                    Delicious Food
+                </h3>
+
+            </td>
+
+
+            <td>
+
+                <img src="main-2.jpg" alt="Fresh Food">
+
+                <h3>
+                    Fresh and Healthy
+                </h3>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+
+    <p>
+
+        From delicious burgers and crispy fries to healthy meals and tasty noodles, we have something for everyone. Come and enjoy great taste and quality food at Yummy Foods.
+
+    </p>
+
+
+
+    <!-- ================================================= -->
+    <!-- BURGERS -->
+    <!-- ================================================= -->
+
+    <section id="burgers">
+
+        <h2>
+            Burgers Collection
+        </h2>
+
+
+        <p>
+
+            Enjoy our delicious burgers prepared with fresh vegetables, tasty sauces, soft buns and flavorful fillings. Every burger is made to give you a satisfying and delicious experience.
+
+        </p>
+
+
+        <table>
+
+            <tr>
+
+
+                <td>
+
+                    <img src="burger1.jpg" alt="Classic Burger">
+
+                    <h3>
+                        Classic Burger
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="burger2.jpg" alt="Cheese Burger">
+
+                    <h3>
+                        Cheese Burger
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="burger3.jpg" alt="Veggie Burger">
+
+                    <h3>
+                        Veggie Burger
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="burger4.jpg" alt="Special Burger">
+
+                    <h3>
+                        Special Burger
+                    </h3>
+
+                </td>
+
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- FRIES -->
+    <!-- ================================================= -->
+
+    <section id="fries">
+
+
+        <p>
+
+            Crispy, golden and perfectly seasoned fries are the perfect companion for every meal. Enjoy our delicious fries with your favorite sauces and snacks.
+
+        </p>
+
+
+        <h2>
+            Fire and Ice with our Fries
+        </h2>
+
+
+        <p>
+
+            Our fries are freshly prepared and cooked until they are crispy on the outside and soft on the inside. They are perfect for sharing with friends and family.
+
+        </p>
+
+
+        <table>
+
+            <tr>
+
+
+                <td>
+
+                    <img src="fries1.jpg" alt="Classic Fries">
+
+                    <h3>
+                        Classic Fries
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="fries2.jpg" alt="Cheese Fries">
+
+                    <h3>
+                        Cheese Fries
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="fries3.jpg" alt="Spicy Fries">
+
+                    <h3>
+                        Spicy Fries
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="fries4.jpg" alt="Special Fries">
+
+                    <h3>
+                        Special Fries
+                    </h3>
+
+                </td>
+
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- HEALTHY FOOD -->
+    <!-- ================================================= -->
+
+    <section id="healthy">
+
+
+        <p>
+
+            Looking for something healthy and delicious? Try our fresh meals prepared with nutritious vegetables and quality ingredients.
+
+        </p>
+
+
+        <h2>
+            Eat Healthy and Stay Healthy
+        </h2>
+
+
+        <p>
+
+            Healthy food can also be delicious. Our fresh and colorful meals are prepared with carefully selected ingredients to give you great taste along with nutritious food.
+
+        </p>
+
+
+        <table>
+
+            <tr>
+
+
+                <td>
+
+                    <img src="healthy1.jpg" alt="Fresh Salad">
+
+                    <h3>
+                        Fresh Salad
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="healthy2.jpg" alt="Vegetable Bowl">
+
+                    <h3>
+                        Vegetable Bowl
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="healthy3.jpg" alt="Healthy Meal">
+
+                    <h3>
+                        Healthy Meal
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="healthy4.jpg" alt="Green Salad">
+
+                    <h3>
+                        Green Salad
+                    </h3>
+
+                </td>
+
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- NOODLES -->
+    <!-- ================================================= -->
+
+    <section id="noodles">
+
+
+        <p>
+
+            Enjoy flavorful noodles prepared with fresh vegetables, delicious sauces and aromatic spices. Our noodles are perfect for a quick and tasty meal.
+
+        </p>
+
+
+        <h2>
+            Do Google and Eat Noodles
+        </h2>
+
+
+        <p>
+
+            Try our delicious varieties of noodles prepared with fresh ingredients and wonderful flavors. They are a perfect choice for noodle lovers.
+
+        </p>
+
+
+        <table>
+
+            <tr>
+
+
+                <td>
+
+                    <img src="noodles1.jpg" alt="Vegetable Noodles">
+
+                    <h3>
+                        Vegetable Noodles
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="noodles2.jpg" alt="Spicy Noodles">
+
+                    <h3>
+                        Spicy Noodles
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="noodles3.jpg" alt="Schezwan Noodles">
+
+                    <h3>
+                        Schezwan Noodles
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="noodles4.jpg" alt="Special Noodles">
+
+                    <h3>
+                        Special Noodles
+                    </h3>
+
+                </td>
+
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- SWEET DESSERTS -->
+    <!-- ================================================= -->
+
+    <section id="desserts">
+
+
+        <h2>
+            Sweet Desserts
+        </h2>
+
+
+        <p>
+
+            Finish your delicious meal with our sweet and mouth-watering desserts. Enjoy our delicious cakes, creamy ice creams, fresh fruit desserts and tasty pastries.
+
+        </p>
+
+
+        <table>
+
+            <tr>
+
+
+                <td>
+
+                    <img src="dessert1.jpg" alt="Chocolate Cake">
+
+                    <h3>
+                        Chocolate Cake
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="dessert2.jpg" alt="Ice Cream">
+
+                    <h3>
+                        Ice Cream
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="dessert3.jpg" alt="Fruit Dessert">
+
+                    <h3>
+                        Fruit Dessert
+                    </h3>
+
+                </td>
+
+
+                <td>
+
+                    <img src="dessert4.jpg" alt="Sweet Pastry">
+
+                    <h3>
+                        Sweet Pastry
+                    </h3>
+
+                </td>
+
+
+            </tr>
+
+        </table>
+
+
+        <p>
+
+            Our desserts are freshly prepared and are perfect for celebrating special moments or simply enjoying a sweet treat after your favorite meal.
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- FOOTER -->
+    <!-- ================================================= -->
+
+    <footer>
+
+        © 2026 Yummy Foods | Fresh Food | Great Taste
+
+    </footer>
+
+
+</body>
+
+</html>
